@@ -255,6 +255,9 @@ body {
 	display: inline-block;
 	max-width: 349px;
 	text-decoration: none;
+
+
+	display: none;
 }
 
 .news__item + .news__item {
@@ -269,6 +272,11 @@ body {
 .news__date {
 	color: #808080;
 	transition: all .3s;
+}
+
+.news__empty {
+	text-align: center;
+	color: #808080;
 }
 
 /* END NEWS */
