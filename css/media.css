@@ -1,0 +1,303 @@
+@media (max-width: 1150px) {
+  .main-screen__wrapper {
+    max-width: 520px;
+  }
+
+  /* EVENTS.HTML */
+
+  .events__wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-screen__wrapper {
+    margin: 20px auto 0;
+  }
+
+  .main-screen__title,
+  .main-screen__text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .page__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about__title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about__text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about__wrapper {
+    max-width: 520px;
+    margin: 20px auto 0;
+  }
+
+  .news {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .news__title {
+    margin-bottom: 25px;
+  }
+
+  .news__item + .news__item {
+    margin-top: 0;
+  }
+
+  .news__item {
+    margin-top: 20px !important;
+  }
+
+  .partners__wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .partners {
+    margin-bottom: 0;
+  }
+
+  /* EVENTS.HTML */
+
+  .events__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .events__item {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .header__logo {
+    padding: 5.8px 0;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__menu {
+    background-color: #fff;
+    bottom: -1px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+  }
+
+  .header__menu.active {
+    bottom: -191px;
+    height: 190px;
+    padding: 25px 0;
+  }
+
+  .header__item {
+    margin: 0 auto !important;
+  }
+
+  .header__item + .header__item {
+    margin-top: 20px !important;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .main-screen__title {
+    padding-top: 40px;
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  .main-title {
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  .main-screen__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .page__inner {
+    width: 100%;
+  }
+
+  .footer__logo,
+  .footer__menu,
+  .footer__contacts,
+  .footer__sponsor {
+    max-width: 50%;
+    width: 100%;
+  }
+
+  .footer__info {
+    margin: 0 auto;
+  }
+
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* EVENTS.HTML */
+
+  .events__wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .news__wrapper,
+  .partners__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .news__item {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .main-screen__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .main-screen__text,
+  .about__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+
+
+@media (max-width: 450px) {
+
+  .container {
+    padding: 0 5px;
+  }
+
+  .main-screen__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .footer__logo,
+  .footer__menu,
+  .footer__contacts,
+  .footer__sponsor {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__logo,
+  .footer__contacts {
+    margin-bottom: 30px;
+  }
+
+  .footer__info {
+    display: none;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .main-screen__title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .main-screen__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /* EVENTS.HTML */
+
+  .events__title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .events__name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .events__item:hover .events__hover{
+    height: calc(100% - 76px);
+  }
+
+}

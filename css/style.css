@@ -54,6 +54,7 @@ body {
 
 .header {
 	border-bottom: 1px solid #373737;
+	position: relative;
 }
 
 .header__inner {
@@ -99,6 +100,57 @@ body {
 	color: #7EB2FD;
 }
 
+.header__burger {
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+	position: relative;
+	display: none;
+}
+
+.header__burger::before {
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color: #373737;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: all .3s;
+}
+
+.header__burger::after {
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color: #373737;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all .3s;
+}
+
+.header__line {
+	height: 3px;
+	background-color: #373737;
+	margin-top: 11px;
+}
+
+.header__burger.active .header__line {
+	opacity: 0;
+}
+
+.header__burger.active::before {
+	top: 12px;
+	transform: rotate(45deg);
+}
+
+.header__burger.active::after {
+	top: 12px;
+	transform: rotate(-45deg);
+}
+
+
 /* END HEADER */
 
 /* START PAGE */
@@ -135,13 +187,9 @@ body {
 }
 
 .main-screen__wrapper {
-	max-width: 830px;
-	margin-left: auto;
-	
 	max-width: 700px;
 	margin-left: auto;
 	margin-top: -120px;
-
 }
 
 .main-screen__img {
@@ -213,9 +261,6 @@ body {
 	margin-top: 20px;
 }
 
-.news__item:hover .news__date {
-	color: #7EB2FD;
-}
 
 .news__info {
 	color: #373737;
@@ -295,6 +340,8 @@ body {
 .footer__inner {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
 	padding: 30px 0;
 }
 
@@ -307,11 +354,15 @@ body {
 	font-size: 14px;
 }
 
+.footer__info {
+	max-width: 180px;
+}
+
 .footer__menu {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	max-width: 175px;
+	max-width: 196px;
 	width: 100%;
 }
 
@@ -344,12 +395,17 @@ body {
 .footer__adress {
 	display: block;
 	margin-top: 10px;
-	color: #808080;
+	color: #373737;
 	text-decoration: none;
 }
 
+.footer__adress {
+	max-width: 200px;
+	text-align: center;
+}
+
 .footer__sponsor {
-	max-width: 265px;
+	max-width: 215px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -360,6 +416,7 @@ body {
 .footer__sponsor-name {
 	text-align: center;
 	color: #373737;
+	max-width: 295px;
 }
 
 .footer__copy {
@@ -414,9 +471,13 @@ body {
 }
 
 .events__item:hover .events__hover{
-	height: calc(100% - 81px);
+	height: calc(100% - 80px);
 	overflow: visible;
 	opacity: 1;
+}
+
+.events__img {
+	width: 100%;
 }
 
 .events__info {
@@ -449,7 +510,7 @@ body {
 	height: 0;
 	overflow: hidden;
 	opacity: 0;
-	background-color: rgba(64, 64, 64, .7);
+	background-color: rgba(126, 178, 253, .7);
 	text-decoration: none;
 	display: flex;
 	align-items: center;
