@@ -265,6 +265,19 @@
     display: none;
   }
 
+  /* WORKSHOP.HTML */
+
+  .workshop__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  /* IDEAS.HTML */
+
+  .ideas__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 @media (max-width: 450px) {
